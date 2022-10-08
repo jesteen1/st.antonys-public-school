@@ -1,0 +1,17 @@
+.blur{
+    filter: blur(70px);
+}
+.blur1{
+    background-color: rgb(60, 65, 70);
+    border: 5px solid orange;
+     filter: blur(70px); 
+    
+    overflow-x: hidden;
+}
+.text-blur1{
+   text-align: center;
+    position: relative;
+    top: 140px;
+  z-index: 2;
+  
+}
