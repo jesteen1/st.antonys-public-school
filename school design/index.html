@@ -45,7 +45,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./fatherorignal.jpg" class="d-block w-100 object-fill relative  lg:object-cover height blur" id="blur" alt="1" onload="loadImage()">
+        <img src="./fatherorignal.jpg" class="d-block w-100 object-fill relative  lg:object-cover height blur" id="blur" alt="1" >
         <div class="carousel-caption block">
           <div class="bg-black1 p-2 rounded">
 
@@ -286,22 +286,18 @@
 </section>
 </section>
 <script >
-  function loadImage(){
-    var image=document.querySelectorAll('#blur')
+window.addEventListener('load',()=>{
 
-    for(var i=0 ;i<image.length;i++){
-        image[i].classList.remove('blur');
-    }
+  var image=document.querySelectorAll('#blur')
 
-}
+  for(var i=0 ;i<image.length;i++){
+      image[i].classList.remove('blur');
+  }
+})
 
-function loadImage2(){
-    var image=document.querySelectorAll('#blur1')
 
-    for(var i=0 ;i<image.length;i++){
-        image[i].classList.remove('blur1');
-    }
-}
+
+
 
 </script>
  <script src="./bootstrap.js"></script>
