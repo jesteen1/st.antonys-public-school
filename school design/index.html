@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="icon" href="school-logo.png">
      <link href="./bottstrap.css" rel="stylesheet" >
+     <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
      <section class="p-4 md:p-5 bg-purple-500 text-white">
@@ -44,7 +45,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./fatherorignal.jpg" class="d-block w-100 object-fill relative  lg:object-cover height" alt="1">
+        <img src="./fatherorignal.jpg" class="d-block w-100 object-fill relative  lg:object-cover height blur" id="blur" alt="1" onload="loadImage()">
         <div class="carousel-caption block">
           <div class="bg-black1 p-2 rounded">
 
@@ -55,7 +56,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./principle.jpg" class="d-block height w-100 relative object-fill lg:object-cover" alt="2">
+        <img src="./principle.jpg" class="d-block height w-100 relative object-fill lg:object-cover blur" id="blur" alt="2">
         <div class="carousel-caption block ">
           <div class="bg-black1 p-2 rounded">
 
@@ -66,7 +67,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./oldprincpal.jpg" class="d-block height  relative w-100   object-fill lg:object-cover" alt="3">
+        <img src="./oldprincpal.jpg" class="d-block height  relative w-100   object-fill lg:object-cover blur" id="blur" alt="3">
         <div class="carousel-caption block ">
           <div class="p-2 bg-black1  rounded">
 
@@ -136,10 +137,10 @@
 <!-- IN A CARD DESIGN CONENT ALONE I WANT FILL  -->
 <section class="bg-black2" id="courses">
   <p class="text-white  text-shadow text-center px-2 py-3 text-4xl lg:text-6xl">OUR COURSES</p>
-  <div class=" p-5 flex   align-content-center  overflow-x-auto  ">
+  <div class=" p-5 flex   align-content-center  overflow-x-auto  backdrop-blur-0">
  
 <div class="card  p-0 rounded-2xl  mx-4 transform scale-hover  rounded">
-  <img src="./kindergarten-courses-intro.jpg" alt="father" class=" h-1/2 p-0">
+  <img src="./kindergarten-courses-intro.jpg" alt="father" class=" h-1/2 p-0 0 w-95 blur1 object-fit " id="blur1" >
   <div class="h-1/2 bg-blue-500">
     <div class="overflow-hidden   text-animation">
 
@@ -149,7 +150,7 @@
   </div>
 </div>
 <div class="card  p-0 rounded-2xl mx-4 transform scale-hover rounded">
-  <img src="./primary-courses-intro.jpg" alt="father" class=" h-1/2 p-0">
+  <img src="./primary-courses-intro.jpg" alt="father" class=" h-1/2 p-0 blur1"  id="blur1" >
   <div class="h-1/2 bg-blue-500">
     <div class="overflow-hidden   text-animation">
 
@@ -159,7 +160,7 @@
   </div>
 </div>
 <div class="card  p-0 rounded-2xl mx-4 transform scale-hover rounded">
-  <img src="./experiential-learning.jpg" alt="father" class=" h-1/2 p-0">
+  <img src="./experiential-learning.jpg" alt="father" class=" h-1/2 p-0 blur1"  id="blur1">
   <div class="h-1/2 bg-blue-500">
     <div class="overflow-hidden   text-animation">
 
@@ -169,7 +170,7 @@
   </div>
 </div>
 <div class="card  p-0 rounded-2xl mx-4 transform scale-hover rounded">
-  <img src="./resource-learning.jpg" alt="father" class=" h-1/2 p-0">
+  <img src="./resource-learning.jpg" alt="father" class=" h-1/2 p-0 blur1"  id="blur1">
   <div class="bg-blue-500 h-1/2">
     <div class="overflow-hidden   text-animation">
 
@@ -179,7 +180,7 @@
   </div>
 </div>
 <div class="card  p-0 rounded-2xl mx-4 transform scale-hover rounded">
-  <img src="./senior-secondary-courses.jpg" alt="father" class=" h-1/2 p-0">
+  <img src="./senior-secondary-courses.jpg" alt="father" class=" h-1/2 p-0 blur1 " id="blur1">
   <div class="h-1/2 bg-blue-500">
     <div class="overflow-hidden   text-animation bg-gradient-to-r from-blue-500 to-indigo-500">
 
@@ -284,8 +285,28 @@
   </div>
 </section>
 </section>
+<script >
+  function loadImage(){
+    var image=document.querySelectorAll('#blur')
+
+    for(var i=0 ;i<image.length;i++){
+        image[i].classList.remove('blur');
+    }
+
+}
+
+function loadImage2(){
+    var image=document.querySelectorAll('#blur1')
+
+    for(var i=0 ;i<image.length;i++){
+        image[i].classList.remove('blur1');
+    }
+}
+
+</script>
  <script src="./bootstrap.js"></script>
         <script src="./intro.js"></script>
+
 </body>
 <style>
 .text-shadow2{
