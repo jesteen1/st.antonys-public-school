@@ -9,8 +9,11 @@ function loadImage(){
 }
 
 function loadImage2(){
-    var image=document.querySelectorAll('#blur1')
-
+   
+var conent_image=document.querySelectorAll('#blur1')
+    for(var i=0 ;i<image.length;i++){
+        image[i].classList.remove('blur1');
+    }
     for(var i=0 ;i<image.length;i++){
         image[i].classList.remove('blur1');
     }
