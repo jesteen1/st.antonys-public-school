@@ -24,3 +24,6 @@ left: -8px;
 p{
   font-family: Arial,Helvetica,sans-serif;
 }
+.hover:hover  .img-thumnail3 {
+  transform: scale(1.5);
+  }
