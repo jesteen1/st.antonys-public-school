@@ -20,8 +20,8 @@
             <nav class="list-none  flex ml-auto my-auto ">
 
                 <li class="pl-5 my-auto text-lg md:text-2xl  rounded  hidden md:block  border-2 text-center lg:px-5 px-3 border-purple-500 cursor-pointer hover:border-red-500  ">home</li>
-                <li class="pl-5 my-auto text-lg md:text-2xl rounded  hidden md:block   border-2 text-center lg:px-5 px-3 border-purple-500 cursor-pointer hover:border-red-500  "> <a href="#courses" class="text-decoration-none text-white text-lowercase">
-                   our courses</a></li>
+                <li class="pl-5 my-auto text-lg md:text-2xl rounded  hidden md:block   border-2 text-center lg:px-5 px-3 border-purple-500 cursor-pointer hover:border-red-500  "> <a href="./obout.html" class="text-decoration-none text-white text-lowercase">
+                   obout</a></li>
                 <li class="pl-5 my-auto text-lg md:text-2xl  rounded   hidden md:block  border-2 text-center lg:px-5 px-3 border-purple-500 cursor-pointer hover:border-red-500  "><a href="./servies.html" class="text-decoration-none text-white text-lowercase">services</a></li>
                 <img src="./menu.svg" class="  menu  block w-10 h-7  md:hidden "  id="menu"  alt="">
             </nav>
@@ -30,7 +30,7 @@
         <div class="phone mt- overflow-hidden h-0 transition-all delay-100" id="phone">
             <li class="pl-5 my-auto text-lg md:text-2xl   md:hidden block  text-center lg:px-5 px-3  cursor-pointer   "> home</li>
             <li class="pl-5 my-auto text-lg md:text-2xl   md:hidden block   text-center lg:px-5 px-3  cursor-pointer   ">
-            <a href="#courses" class="text-decoration-none text-white">our courses</a></li>
+            <a href="./obout.html" class="text-decoration-none text-white">obout</a></li>
             <li class="pl-5 my-auto text-lg md:text-2xl   md:hidden block  text-center lg:px-5 px-3  cursor-pointer   ">  <a href="./servies.html" class="text-decoration-none text-white text-lowercase">services</a> </li>
           </div>
 
@@ -238,12 +238,12 @@
           <div class=" mt-4 ">
       
             <p class="capitalize text-down  text-lg cursor-pointer "> <a href="./index.html" class="text-down text-down2 hover:underline" >home</a>  </p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >about</a></p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >admission</a></p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >news & events</a></p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >gallery</a></p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >careers</a></p>
-            <p class="capitalize text-down  text-lg cursor-pointer "><a href="" class="text-down text-down2 hover:underline" >contants</a></p>
+            <p class="capitalize text-down  text-lg cursor-pointer "><a href="./obout.html" class="text-down text-down2 hover:underline" >about</a></p>
+            <p class="capitalize text-down  text-lg cursor-pointer "><a href="./admission.html" class="text-down text-down2 hover:underline" >admission</a></p>
+            <p class="capitalize text-down  text-lg cursor-pointer "><a href="./news.html" class="text-down text-down2 hover:underline" >news & events</a></p>
+            <p class="capitalize text-down  text-lg cursor-pointer "><a href="./gallery.html" class="text-down text-down2 hover:underline" >gallery</a></p>
+           
+            <p class="capitalize text-down  text-lg cursor-pointer "><a href="./contacts.html" class="text-down text-down2 hover:underline" >contants</a></p>
           </div>
        
       </div>
@@ -319,161 +319,330 @@ for(var counted=0 ; counted<text.length ; counted++){
 
 </body>
 <style>
-.text-shadow2{
-  text-shadow: 5px 5px 5px rgba(76, 73, 73, 0.667) ;
-} 
-::selection{
-  background-color: rgb(65, 188, 65);
-}
-.text-shadow{
-  text-shadow: rgb(0, 89, 255) 5px 5px 10px ,rgb(0, 89, 255) -5px -5px 10px;
-}
-  .flex-start{
-    align-items: flex-start;
-    
-  }
-  .contentfix{
-    height: fit-content;
+  .laptop {
+      width: 100%;
+      max-width: 1200px;
+      position: relative;
   }
 
-  @media  (min-width:900px){
-    .text-animation{
-    position: relative;
-    z-index: 1;
+  .laptop img {
+      width: 100%;
   }
-  .card:hover{
-    box-shadow: rgb(0, 89, 255) 10px 10px 20px , rgb(0, 89, 255) -10px -10px 20px ;
-  }
-  .text-animation::before{
-    width:490px;
-  content: ""
-  ;
-    height: 490px;
-   
-    position: absolute;
-    transition: .5s linear;
-    top: 40px;
-    background-color: rgb(227, 12, 80);
-    
-    
-  }
-  .card:hover .text-animation::before{
-    top: 1px;
-  }
-  .scale-hover:hover{
-    scale: 1.1;
-    transition: .5s linear;
-  }
-    .height{
-height:80vh;
-  }
-  .top-55{
-    
-    top: 24rem;
-  }
-  }
-  /* .width{
-      width: 50vh;
-    } */
-  .bg-black1{
-    background-color: rgba(26, 24, 24, 0.6);
-  }
-  .bg-fotter{
-    background-color: #2a2a2a;
-  }
-  .bg-black2{
-    background-color: #282c34;
-  }
-  .text-down{
-color: #a5b1c2;
-text-decoration: none;
 
+  .laptop .video {
+      position: absolute;
+      width: 67.7%;
+      height: 81.3%;
+      background: #000;
+      top: 7.1%;
+      left: 17.5%;
   }
-  
-  .text-down2:hover{
-    color:  rgb(254, 245, 119);
+</style>
+<style>
+  .text2{
+      line-height: 40px;
   }
-  
+  .video {
+      width: 67.7%;
+      height: 81.3%;
+      background: #000;
+      top: 7.1%;
+      left: 17.5%;
+  }
+
+  /* .text-conent{
+      width: 50%;
+  } */
+
+  .pos {
+      position: absolute;
+  }
+
   @media (max-width:900px) {
-    
-    .top-55{
-      
-      top: 12rem;
-    }
-     .width{
-      width: 70vh;
+
+      .text-color {
+          color: white;
+          font-weight: bolder;
+          display: none;
+      }
+  }
+
+  @media (min-width:900px) {
+      .bg-img-color {
+          background-color: rgba(0, 0, 0, 0.238);
+      }
+      .scale-hover {
+      transition: all linear .5s;
+  }
+
+  .scale-hover:hover {
+      transform: scale(1.1);
+  }
+      .text-color {
+          color: white;
+          font-weight: bolder;
+          text-shadow: 5px 5px 10px black;
+
+      }
+
+      .moving {
+          top: 60vh;
+          transition: .5s linear;
+      }
+  }
+
+  .hover:hover .moving {
+      top: 0;
+      ;
+  }
+
+  .bg-black2 {
+      background-color: #282c34;
+
+  }
+
+  .text-down {
+      color: #a5b1c2;
+      text-decoration: none;
+
+  }
+
+  .text-down2:hover {
+      color: rgb(254, 245, 119);
+  }
+
+  .img-thumnail2 {
+
+      width: 100%;
+      height: 393px;
+      object-fit: cover;
+  }
+
+  .img-thumnail3 {
+
+      width: 100%;
+      height: 390px;
+      object-fit: fill;
+  }
+
+  .word-spacing {
+      word-spacing: 4px;
+
+      line-height: 34px;
+  }
+
+  .adjust-text {
+      word-spacing: 8px;
+      line-height: 35px;
+      font-family: sans-serif;
+  }
+
+  .height1 {
+      height: 290px;
+  }
+
+  .bg-white-50 {
+      background-color: rgba(255, 255, 255, 0.3);
+      text-shadow: 5px 5px 10px black;
+  }
+
+  .text-shadow3 {
+      text-shadow: 5px 5px 10px black;
+  }
+
+  .textcenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  ::selection {
+      background-color: rgb(73, 255, 73);
+      color: white;
+  }
+</style>
+<style>
  
+ 
+
+  .text-shadow2 {
+      text-shadow: 5px 5px 5px rgba(76, 73, 73, 0.667);
   }
 
+  ::selection {
+      background-color: rgb(65, 188, 65);
   }
- .text{
-    text-align: center;
-    align-content: center;
- }
-.card{
-background-color: transparent;
 
-height:500px ;
-position: relative; 
-box-sizing: border-box;
-min-width: 340px;
-}
-/* ::-webkit-scrollbar-thumb{
-  background-color: #a5b1c2 ;
-  border-radius: 20px;
-}
-::-webkit-scrollbar{
-  background-color: antiquewhite;
-} */
-.outline-slider
-{
-    width:1000px
-}
-.photogroup{
-    overflow: hidden;
-    width: 900px;
-    
-}
-.container-1{
-  background-image: linear-gradient(180deg,red , orange,purple);
-    min-width: 100px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:12px;
-    margin-left: -12px;
-}
-.photo-moving{
-    background-color: rgb(184 22 22);
-    width: 900px;
-    height: 302px;
+  .text-shadow {
+      text-shadow: rgb(0, 89, 255) 5px 5px 10px, rgb(0, 89, 255) -5px -5px 10px;
+  }
+
+  .flex-start {
+      align-items: flex-start;
+
+  }
+
+  .contentfix {
+      height: fit-content;
+  }
+
+  @media (min-width:900px) {
+      .text-animation {
+          position: relative;
+          z-index: 1;
+      }
+
+      .card:hover {
+          box-shadow: rgb(0, 89, 255) 10px 10px 20px, rgb(0, 89, 255) -10px -10px 20px;
+      }
+
+      .text-animation::before {
+          width: 490px;
+          content: ""
+          ;
+          height: 490px;
+
+          position: absolute;
+          transition: .5s linear;
+          top: 40px;
+          background-color: rgb(227, 12, 80);
 
 
-margin: 0%;
+      }
 
-overflow: hidden;
-}
+      .card:hover .text-animation::before {
+          top: 1px;
+      }
 
-.photo-group{
-    display: flex;
-    flex-direction: row;
-  
-    width: 3800px;
-    margin-left: -2697px;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-    transform: 1s;
-animation-name: photobig;
+      .scale-hover:hover {
+          scale: 1.1;
+          transition: .5s linear;
+      }
+
+      .height {
+          height: 80vh;
+      }
+
+      .top-55 {
+
+          top: 24rem;
+      }
+  }
+
+  /* .width{
+        width: 50vh;
+      } */
+  .bg-black1 {
+      background-color: rgba(26, 24, 24, 0.6);
+  }
+
+  .bg-fotter {
+      background-color: #2a2a2a;
+  }
+
+  .bg-black2 {
+      background-color: #282c34;
+  }
+
+  .text-down {
+      color: #a5b1c2;
+      text-decoration: none;
+
+  }
+
+  .text-down2:hover {
+      color: rgb(254, 245, 119);
+  }
+
+  @media (max-width:900px) {
+
+      .top-55 {
+
+          top: 12rem;
+      }
+
+      .width {
+          width: 70vh;
+
+      }
+
+  }
+
+  .text {
+      text-align: center;
+      align-content: center;
+  }
+
+  .card {
+      background-color: transparent;
+
+      height: 500px;
+      position: relative;
+      box-sizing: border-box;
+      min-width: 340px;
+  }
+
+  /* ::-webkit-scrollbar-thumb {
+      background-color: #a5b1c2;
+      border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar {
+      background-color: antiquewhite;
+  } */
+
+  .outline-slider {
+      width: 1000px
+  }
+
+  .photogroup {
+      overflow: hidden;
+      width: 900px;
+
+  }
+
+  .container-1 {
+      background-image: linear-gradient(180deg, red, orange, purple);
+      min-width: 100px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-left: -12px;
+  }
+
+  .photo-moving {
+      background-color: rgb(184 22 22);
+      width: 900px;
+      height: 302px;
 
 
-}
-img{
-    width: 900px;
-    height: 300px;
-  
-    transition: 1s;
-}
+      margin: 0%;
+
+      overflow: hidden;
+  }
+
+  .photo-group {
+      display: flex;
+      flex-direction: row;
+
+      width: 3800px;
+      margin-left: -2697px;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      transform: 1s;
+      animation-name: photobig;
+
+
+  }
+
+  img {
+      width: 900px;
+      height: 300px;
+
+      transition: 1s;
+  }
 </style>
 
 </html>

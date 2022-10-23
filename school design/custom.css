@@ -24,6 +24,7 @@ left: -8px;
 p{
   font-family: Arial,Helvetica,sans-serif;
 }
+
 @media (min-width:900px) {
   .hover:hover  .img-thumnail3 {
     transform: scale(1.5);
