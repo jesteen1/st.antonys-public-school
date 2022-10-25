@@ -17,7 +17,7 @@
                 <p class="pl-3 my-auto text-lg  md:text-2xl">st.antonys public school</p>
             </div>
             <nav class="list-none  flex ml-auto my-auto ">
-    
+
                 <li
                     class="pl-5 my-auto text-lg md:text-2xl  rounded  hidden md:block  border-2 text-center lg:px-5 px-3 border-purple-500 cursor-pointer hover:border-red-500  ">
                     home</li>
@@ -32,7 +32,7 @@
                 </li>
                 <img src="./menu.svg" class="  menu  block w-10 h-7  md:hidden " id="menu" alt="">
             </nav>
-    
+
         </div>
         <div class="phone mt- overflow-hidden h-0 transition-all delay-100" id="phone">
             <li class="pl-5 my-auto text-lg md:text-2xl   md:hidden block  text-center lg:px-5 px-3  cursor-pointer   ">
@@ -45,7 +45,7 @@
                 <a href="./servies.html" class="text-decoration-none text-white text-lowercase">services</a>
             </li>
         </div>
-    
+
     </section>
     <div class="relative  textcenter ">
         <img src="./download.jfif" class=" w-full md:w-1/2 lg:w-1/3" alt="/kinder pencil.jpeg">
@@ -61,26 +61,43 @@
     <div class="bg-blue-800 p-5 ">
         <p class="text-3xl text-center text-white font-bold">LET'S GET UPDATED</p>
     </div>
-   
-   
+
+
    <section class="mx-auto">
 
        <form class="bg-black4 p-20 text-center bg-img">
-               
-          
+
+
              <p class="text-4xl text-white  ">Join Our Newsletter</p>
              <p class="mt-11 text-white font-bold text-2xl">The latest news and updates from St.Antony's Public School</p>
              <div class="mx-auto flex">
-                 <div class="mx-auto mt-3 text-2xl text-white flex text-center hover-email justify-center  mx-auto width rounded">
+                 <div class="mx-auto mt-3 text-2xl text-white flex text-center hidden lg:flex  hover-email justify-center  mx-auto width rounded">
       <div class="my-auto flex bg-black py-2 px-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
         </svg>
         </div>
-        
+
       <input class="   font-size email  focus:outline-none text-black " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" name="email" type="text" id="inp" placeholder="enter the name">
       <input class=" bg-black px-2" type="submit" name="submit" value="subscribe" ></input>
                  </div>
+                  <div class="mx-auto mt-3 text-2xl text-white  text-center hidden custom xl:hidden   justify-center  mx-auto width rounded">
+                    <div class="my-auto flex bg-black py-2 px-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                      </svg>
+                      </div>
 
+                    <input class="   font-size email-2  focus:outline-none text-black " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" name="email" type="text" id="inp" placeholder="enter the name">
+                    <input class=" bg-black px-2" type="submit" name="submit" value="subscribe" ></input>
+                               </div> 
+                               <div class="mx-auto mt-3 text-2xl text-white  text-center flex  sm:hidden   justify-center  mx-auto width rounded">
+                                <div class="my-auto flex bg-black py-2 px-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                                  </svg>
+                                  </div>
+            
+                                <input class="   font-size email-3  focus:outline-none text-black " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" name="email" type="text" id="inp" placeholder="enter the name">
+                                <input class=" bg-black px-2" type="submit" name="submit" value="subscribe" ></input>
+                                           </div> 
              </div>
        </form>
    </section>
@@ -128,7 +145,7 @@
                                 class="text-down text-down2 hover:underline">news & events</a></p>
                         <p class="capitalize text-down  text-lg cursor-pointer "><a href="./gallery.html"
                                 class="text-down text-down2 hover:underline">gallery</a></p>
-                    
+
                         <p class="capitalize text-down  text-lg cursor-pointer "><a href="./contacts.html"
                                 class="text-down text-down2 hover:underline">contants</a></p>
                     </div>
@@ -188,16 +205,32 @@
 </section>
 <script src="./intro.js"></script>
 <script>
-  
+
 
 </script>
 </body>
 <style>
+    @media (max-width:731px) {
+        .custom{
+display: flex;
+        }
+    }
+    @media (max-width:411px) {
+        .custom{
+display: none;
+        }
+    }
+   .email-2{
+    width: 40vh;
+   }
+   .email-3{
+    width: 20vh;
+   }
     .bg-img{
         background-image: url(./natural\ one.jpg) ;
         background-repeat: no-repeat;
         background-size: cover;
-      
+
     }
     .bg-fotter{
         background-color: #181818;
@@ -209,20 +242,15 @@
     .hover-email{
     transition: all linear 2s;
 }
-@media (min-width:900px) {
+
     .hover-email:hover  .email{
         width: 60vh;
         transition: all linear .5s;
     }
-}
-@media (max-width:900px) {
-    .email{
-        width: 17vh;
-        
-    }
-}
 
-  
+
+
+
     .bg-black2 {
         background-color: #282c34;
 
@@ -241,8 +269,8 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-       
-       
+
+
     }
     .font-size{
         font-size:.6em;
@@ -257,7 +285,7 @@
     }
     .width{
         width: 520px;
-       
+
     }
 </style>
 <style>
