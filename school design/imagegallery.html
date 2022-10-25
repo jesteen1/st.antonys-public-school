@@ -7,6 +7,7 @@
     <title>imagegallery</title>
     <link rel="icon" href="./school-logo.png">
     <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
     <section class="p-4 md:p-5 bg-purple-500 text-white">
@@ -247,7 +248,9 @@
         .card:hover {
             box-shadow: rgb(0, 89, 255) 10px 10px 20px, rgb(0, 89, 255) -10px -10px 20px;
         }
-
+        .hover-scale:hover{
+        transform: scale(1.3);
+    }
         .text-animation::before {
             width: 490px;
             content: ""
@@ -403,9 +406,7 @@
        .hover-scale{
 transition: .5s linear ;
     }
-    .hover-scale:hover{
-        transform: scale(1.3);
-    }
+ 
    .img-1{
     width: 900px;
     height:100%;
